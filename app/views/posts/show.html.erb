@@ -6,6 +6,7 @@
 <h2><%= @post.description%></h2>
 
 <h2>Created by: <%= @user.email%></h2>
+<h2>Created <%= time_ago_in_words(@post.created_at)%> ago</h2>
 <%= button_to "EDIT POST", edit_city_post_path(@city, @post), method: :get%>
 <%= button_to "DELETE", city_post_path(@city, @post), method: :delete, data: {confirm: 'Are you sure?'} %>
-<%= button_to "#{@city.name.upcase} PAGE", city_path, method: :get %>
+<%= button_to "#{@city.name.upcase} PAGE", city_path(@city), method: :get %>
