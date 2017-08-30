@@ -8,9 +8,11 @@
 
 City.destroy_all
 
-atlanta = City.create(name: "Atlanta", photo: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8100393/Atlanta_Flip_or_Flop.JPG")
+atlanta = City.new(name: "Atlanta", photo: "https://cdn.vox-cdn.com/uploads/chorus_asset/file/8100393/Atlanta_Flip_or_Flop.JPG")
 
 atlanta.posts = [
-  Post.create(title: "Atlanta is awesome!", description: "I had a blast at the aquarium, so much to do", user_id: 1),
-  Post.create(title: "Don't like ATL...", description: "Had a dangerous vibe my entire trip. Not as bad as Savannah though", user_id: 1)
+  Post.new(title: "Atlanta is awesome!", description: "I had a blast at the aquarium, so much to do", user_id: 1),
+  Post.new(title: "Don't like ATL...", description: "Had a dangerous vibe my entire trip. Not as bad as Savannah though", user_id: 1)
 ]
+
+atlanta.save

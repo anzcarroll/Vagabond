@@ -1,6 +1,6 @@
 <h1><%= @city.name %></h1>
 <%= image_tag @city.photo %>
-
+<%= button_to "CREATE NEW POST", new_city_post_path(@city), method: :get %>
 <ul>
   <%= @posts.each do |post| %>
   <li>
@@ -8,4 +8,5 @@
     <p> <%= post.description %></p>
   </li>
   <% end %>
+  
 </ul>
