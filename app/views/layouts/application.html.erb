@@ -12,14 +12,14 @@
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-          <%= link_to "JetLagged", cities_path %>
-          <!-- <% if user_signed_in? %>
+          <h1><%= link_to "JetLagged", cities_path %></h1>
+          <% if user_signed_in? %>
           Logged in as <strong><%= current_user.email %></strong>.
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>
           <% else %>
             <%= link_to "Sign up", new_user_registration_path %> |
             <%= link_to "Login", new_user_session_path  %>
-          <% end %> -->
+          <% end %>
         </div>
       </nav>
 
