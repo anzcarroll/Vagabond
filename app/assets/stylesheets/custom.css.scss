@@ -1,3 +1,7 @@
-@import "bootswatch/amelia/variables";
+@import "bootswatch/slate/variables";
 @import "bootstrap";
-@import "bootswatch/amelia/bootswatch";
+@import "bootswatch/slate/bootswatch";
+
+header {
+  height: 10vh;
+}
