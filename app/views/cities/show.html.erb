@@ -1,7 +1,7 @@
 <h1><%= @city.name %></h1>
-<%= image_tag @city.photo %>
+<%= image_tag @city.photo, :class => "show-city-image" %>
 <%= button_to "CREATE NEW POST", new_city_post_path(@city), method: :get %>
-<ul>
+<ul class="list-unstyled">
   <% @posts.each do |post| %>
   <li>
     <h3> <%= post.title %></h3>
@@ -9,5 +9,5 @@
     <%= link_to "read more", city_post_path(@city, post), method: :get %>
   </li>
   <% end %>
-  
+
 </ul>
