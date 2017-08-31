@@ -11,9 +11,16 @@ class PostsController < ApplicationController
 
     def create
         @city = City.find(params[:city_id])
-        @post = @city.posts.create(post_params)
-        redirect_to city_path(@city)
+        @post = @city.posts.new(post_params)
+
+            if @post.save
+              redirect_to city_path(@city), notice: 'Post was successfully created.'
+            else
+               flash[:alert] = @post.errors.full_messages.join(", ")
+               render :new
+        end
     end
+
     def edit
         @post = Post.find(params[:id])
     end
