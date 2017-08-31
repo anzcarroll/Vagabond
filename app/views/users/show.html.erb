@@ -1,0 +1,18 @@
+#show user profile image
+<h1><%= @user.email %></h1>
+</br>
+</br>
+<h3><%= @user.created_at %></h3>
+
+
+<ul class="list-unstyled">
+  <% @posts.each do |post| %>
+  <li>
+    <h3> <%= post.title %></h3>
+    <p> <%= truncate(post.description, length: 200) %></p>
+  </li>
+  <% end %>
+
+</ul>
+
+
