@@ -1,0 +1,13 @@
+<h2>Edit Profile</h2>
+<%= form_for current_user, url: user_show do |f| %>
+  <%= f.label :email, 'Email:' %>
+  </br>
+  <%= f.email_field :email %>
+  </br>
+  </br>
+   <%= f.label :description, 'Description:'  %>
+   </br>
+  <%= f.text_area :description, size: "50x10" %>
+  </br>
+  <%= f.submit "Update #{@post.title}!"%>
+<% end %>

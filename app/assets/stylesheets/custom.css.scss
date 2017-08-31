@@ -2,29 +2,34 @@
 @import "bootswatch/slate/variables";
 @import "bootstrap";
 @import "bootswatch/slate/bootswatch";
-
 header {
-  height: 10vh;
+    height: 10vh;
 }
 
 .show-city-image {
-  height: 50vh;
-  width: 70vh;
+    height: 50vh;
+    width: 70vh;
 }
 
 #myCarousel {
-  height: 70vh;
-  width: 90vh;
+    height: 70vh;
+    width: 90vh;
 }
 
 body {
-  text-align: center;
+    text-align: center;
 }
 
-.carousel, .carousel img{
-  width: 75%;
-  margin: 0 auto;
-}
+.carousel,
 .carousel img {
-  height: 400px;
-} 
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    height: 400px;
+}
+
+.profile-container {
+    display: flex;
+}
