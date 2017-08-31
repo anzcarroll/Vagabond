@@ -1,21 +1,24 @@
 @import "bootswatch/slate/variables";
 @import "bootstrap";
 @import "bootswatch/slate/bootswatch";
-
 header {
-  height: 10vh;
+    height: 10vh;
 }
 
 .show-city-image {
-  height: 50vh;
-  width: 70vh;
+    height: 50vh;
+    width: 70vh;
 }
 
 #myCarousel {
-  height: 70vh;
-  width: 90vh;
+    height: 70vh;
+    width: 90vh;
 }
 
 body {
-  text-align: center;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
 }

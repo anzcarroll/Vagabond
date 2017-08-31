@@ -1,18 +1,20 @@
-#show user profile image
-<h1><%= @user.email %></h1>
-</br>
-</br>
-<h3><%= @user.created_at %></h3>
+<div class="profile-container">
+  <div>
+    <h1><%= @user.email %></h1>
+    </br>
+    </br>
+    <h3><%= @user.created_at %></h3>
+    <%= button_to "EDIT PROFILE", edit_user_registration_path, method: :get%>
+  </div>
+  <div>
+    <ul class="list-unstyled">
+      <% @posts.each do |post| %>
+      <li>
+        <h3> <%= post.title %></h3>
+        <p> <%= truncate(post.description, length: 200) %></p>
+      </li>
+      <% end %>
 
-
-<ul class="list-unstyled">
-  <% @posts.each do |post| %>
-  <li>
-    <h3> <%= post.title %></h3>
-    <p> <%= truncate(post.description, length: 200) %></p>
-  </li>
-  <% end %>
-
-</ul>
-
-
+    </ul>
+  </div>
+</div>
