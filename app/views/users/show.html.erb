@@ -10,7 +10,7 @@
     <ul class="list-unstyled">
       <% @posts.each do |post| %>
       <li>
-        <h3> <%= post.title %></h3>
+        <h3> <%= link_to "#{post.title}",  city_post_path(post.city_id, post), method: :get %></h3>
         <p> <%= truncate(post.description, length: 200) %></p>
       </li>
       <% end %>
