@@ -19,3 +19,11 @@ header {
 body {
   text-align: center;
 }
+
+.carousel, .carousel img{
+  width: 75%;
+  margin: 0 auto;
+}
+.carousel img {
+  height: 400px;
+} 
