@@ -23,5 +23,14 @@ london.posts = [
   Post.new(title: "Can I move there?", description: "I can't stand the US, I wish they had dual citizenship!", user_id: 1)
 ]
 
+san_francisco = City.new(name: "San Francisco", photo: "san-franciscoVagabondEdit.jpg")
+
+san_francisco.posts = [
+  Post.new(title: "Wow! Full House!", description: "Wear flowers in your hair on Haight-Ashbury!", user_id: 1),
+  Post.new(title: "Go Giants!", description: "Make sure to go to the AT&T stadium!", user_id: 1)
+]
+
+
 atlanta.save
 london.save
+san_francisco.save
