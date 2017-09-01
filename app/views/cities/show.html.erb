@@ -1,6 +1,7 @@
 <%= image_tag @city.photo, :class => "show-city-image" %>
 <%= button_to "CREATE NEW POST", new_city_post_path(@city), class: "btn btn-primary", method: :get %>
 <ul class="list-unstyled posts">
+  <!-- Loop through all of the posts, to generate a post "card" for each item -->
   <% @posts.each do |post| %>
   <li class="post">
     <h3><%= post.title %></h3>
