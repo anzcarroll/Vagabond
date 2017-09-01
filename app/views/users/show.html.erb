@@ -3,11 +3,13 @@
     <h1><%= @user.email %></h1>
     </br>
     </br>
+    <!-- Show when a member joined by month and year -->
     <h3>Member joined: <%= @user.created_at.strftime("%B %Y") %></h3>
     <%= button_to "EDIT PROFILE", edit_user_registration_path, class: "btn btn-primary", method: :get%>
   </div>
   <div>
     <ul class="list-unstyled posts">
+      <!-- Loop through all of the posts, to generate a post "card" for each item -->
       <% @posts.each do |post| %>
       <li class="post">
         <h3> <%= link_to "#{post.title}",  city_post_path(post.city_id, post), method: :get %></h3>
