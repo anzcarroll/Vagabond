@@ -1,5 +1,5 @@
 <%= image_tag @city.photo, :class => "show-city-image" %>
-<%= button_to "CREATE NEW POST", new_city_post_path(@city), method: :get %>
+<%= button_to "CREATE NEW POST", new_city_post_path(@city), class: "btn btn-primary", method: :get %>
 <ul class="list-unstyled posts">
   <% @posts.each do |post| %>
   <li class="post">
