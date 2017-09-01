@@ -39,6 +39,7 @@ body {
 
 .profile-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .post {
@@ -49,7 +50,10 @@ body {
   border: solid white;
   padding: 10px;
   border-radius: 10px;
+}
 
+p.post {
+  word-wrap: break-word;
 }
 
 .posts {
@@ -70,4 +74,15 @@ body {
 }
 .header-content {
   text-align: right;
+}
+
+.post_show {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-width: 10px;
 }

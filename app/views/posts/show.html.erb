@@ -3,8 +3,8 @@
 </br>
 </br>
 </br>
-<h2><%= @post.description%></h2>
-
+<p class="post_show"><%= @post.description%></p>
+<hr>
 <h2>Created by: <%= @user.email%></h2>
 <h2>Created <%= time_ago_in_words(@post.created_at)%> ago</h2>
 <%= button_to "EDIT POST", edit_city_post_path(@city, @post), class: "btn btn-primary", method: :get%>

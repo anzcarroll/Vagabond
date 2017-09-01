@@ -3,8 +3,8 @@
 <ul class="list-unstyled posts">
   <% @posts.each do |post| %>
   <li class="post">
-    <h3><strong>Title: </strong><%= post.title %></h3>
-    <p><strong>Description:<br></strong><%= truncate(post.description, length: 200) %></p>
+    <h3><%= post.title %></h3>
+    <p><%= truncate(post.description, length: 200) %></p>
     <%= link_to "read more", city_post_path(@city, post), method: :get %>
   </li>
   <% end %>
