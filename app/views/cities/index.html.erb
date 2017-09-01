@@ -7,9 +7,11 @@
     <div class="carousel-inner">
         <% @cities.each_with_index do |city, index| %>
             <%= content_tag :div, class: (index == 0 ? 'item active' : 'item')  do %>
+            <div class="img">
                 <%= link_to city_path(city) do %>
                     <%= image_tag(city.photo) %>
                 <% end %>
+              </div>
             <% end %>
         <%end%>
     </div>
