@@ -1,14 +1,17 @@
 @import "bootstrap-sprockets";
-@import "bootswatch/slate/variables";
+@import "bootswatch/amelia/variables";
 @import "bootstrap";
-@import "bootswatch/slate/bootswatch";
+@import "bootswatch/amelia/bootswatch";
 header {
-    height: 10vh;
+    height: 5vh;
 }
 
 .show-city-image {
     height: 50vh;
     width: 70vh;
+    // border: solid white;
+    border-radius: 15px;
+    // border-width: 10px;
 }
 
 #myCarousel {
@@ -32,4 +35,35 @@ body {
 
 .profile-container {
     display: flex;
+}
+
+.post {
+  width: 40vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10vh;
+  border: solid white;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+.posts {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.alert{
+  color: white;
+}
+
+.logo{
+  text-align: left;
+}
+.header-content {
+  text-align: right;
 }

@@ -1,13 +1,11 @@
-<h1><%= @city.name %></h1>
 <%= image_tag @city.photo, :class => "show-city-image" %>
 <%= button_to "CREATE NEW POST", new_city_post_path(@city), method: :get %>
-<ul class="list-unstyled">
+<ul class="list-unstyled posts">
   <% @posts.each do |post| %>
-  <li>
-    <h3> <%= post.title %></h3>
-    <p> <%= truncate(post.description, length: 200) %></p>
+  <li class="post">
+    <h3><strong>Title: </strong><%= post.title %></h3>
+    <p><strong>Description:<br></strong><%= truncate(post.description, length: 200) %></p>
     <%= link_to "read more", city_post_path(@city, post), method: :get %>
   </li>
   <% end %>
-
 </ul>
