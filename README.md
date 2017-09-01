@@ -1,24 +1,27 @@
-# README
+ *Team Members: Burns Beaver, Jess Matty, Michael Newman, Ashleigh Carroll
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Application Name: JetLagged
+*Initial Requirements: https://github.com/ATL-WDI-Exercises/project-vagabond
 
-Things you may want to cover:
+*Heroku Link: https://jetlagged.herokuapp.com/#myCarousel
 
-* Ruby version
+*GitHub Repo: https://github.com/burnsbeaver/Vagabond
 
-* System dependencies
+*Pitch Deck: https://slack-files.com/files-pri-safe/T0351JZQ0-F6Y1SLFV4/jet_2flagged.pdf?c=1504283154-93ab6369bd07af0b9e8feaf6fd99641148ae7bf5
 
-* Configuration
+#Special Features
+*Full CRUD for users, cities, and posts
 
-* Database creation
 
-* Database initialization
+#Technologies Used
+*Ruby on Rails
+*HTML5
+*CSS
+*PostgreSQL / ActiveRecord
+*Devise
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## ERD (Database Modeling)
 
-* Deployment instructions
+![](public/ERDVagabond.jpg)
 
-* ...
