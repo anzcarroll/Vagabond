@@ -23,5 +23,5 @@
 
 ## ERD (Database Modeling)
 
-![ERD](/public/ERDVagabond.jpg?raw=true)
+![ERD](./public/ERDVagabond.jpg?raw=true)
 
